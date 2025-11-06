@@ -1,0 +1,12 @@
+.product {
+    display: flex;
+    gap: 1rem
+}
+
+.product * {
+    margin: 0;
+}
+
+.product .line-through {
+    text-decoration: line-through;
+}
