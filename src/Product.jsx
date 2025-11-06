@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./Product.css"
 
-function Product() {
+function Product({ productName }) {
     const [strikethrough, setStrikethrough] = useState(false)
 
     const handleClick = () => {
@@ -12,7 +12,7 @@ function Product() {
         <div className="product">
             <p onClick={handleClick}
                 className={strikethrough ? "line-through" : null}>
-                Nazwa produktu
+                {productName}
             </p>
             <button>Usuń</button>
         </div>
